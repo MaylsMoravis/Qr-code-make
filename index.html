@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Kod Yaratish</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="div">
+            <h2>QR Kod Yaratish</h2>
+            <div>
+                <input type="text" id="linkInput" placeholder="Havolani kiriting">
+                <button onclick="generateQR()">Yaratish</button>
+            </div>
+            <div id="qrcode"></div>
+            <div class="story">
+                <button onclick="toggleMoreInfo()">Ko'proq ma'lumot</button>
+                <div class="more" id="moreInfo" style="display: none;">
+                    <p>Bu sayt sizga osongina QR kod yaratish imkonini beradi. Faqat havolani kiriting va yaratish
+                        tugmasini bosing!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
